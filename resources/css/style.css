@@ -1,0 +1,32 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+textarea {
+    font-family: 'Inconsolata', monospace;
+    resize: vertical;
+    min-height: calc(100vh - 140px);
+}
+
+h1.navbar-brand {
+    margin: 0;
+    cursor: pointer;
+}
+
+#main > .sub-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.navbar-default .navbar-nav > li.donate > a {
+    color: #419641;
+    text-transform: uppercase;
+}
+
+.foot h1 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+}
