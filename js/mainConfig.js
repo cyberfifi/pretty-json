@@ -2,8 +2,7 @@
  * Created by shiyangfei on 10/5/15.
  */
 window.mainConfig = {
-    stripeLogo: 'resources/images/logo/star-of-david-128.png',
-    stripeName: 'Fei Studio',
+    stripeName: 'House of Fei',
     stripeDescription: 'Thanks for your support',
 
 
