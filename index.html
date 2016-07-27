@@ -27,11 +27,6 @@
 
     <link rel="icon" type="image/png" href="resources/images/favicon.png"/>
 
-    <!--JS Libraries-->
-    <script src="https://checkout.stripe.com/checkout.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <!--CSS Libraries-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -40,11 +35,9 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link href='resources/font/fontello.css' rel='stylesheet' type='text/css'>
 
-    <script src="js/mainConfig.js"></script>
-    <script src="js/main.js"></script>
     <link href='resources/css/style.css' rel='stylesheet' type='text/css'>
 </head>
-<body onload="bodyOnLoad()">
+<body>
 
 <!--HEADER NAV BAR-->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -109,24 +102,14 @@
 </nav>
 <!--FOOTER END-->
 
-<!-- Piwik -->
-<script type="text/javascript">
-    var _paq = _paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function () {
-        var u = "//ff19881109.piwikpro.com/";
-        _paq.push(['setTrackerUrl', u + 'piwik.php']);
-        _paq.push(['setSiteId', 1]);
-        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-        g.type = 'text/javascript';
-        g.async = true;
-        g.defer = true;
-        g.src = u + 'piwik.js';
-        s.parentNode.insertBefore(g, s);
-    })();
-</script>
-<noscript><p><img src="//ff19881109.piwikpro.com/piwik.php?idsite=1" style="border:0;" alt=""/></p></noscript>
-<!-- End Piwik Code -->
+<!--JS Libraries-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<!--JS Libraries END-->
+
+<!--JS Files-->
+<script src="js/main.js"></script>
+<!--JS Files END-->
 </body>
 </html>

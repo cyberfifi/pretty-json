@@ -1,9 +1,6 @@
 /**
  * Created by sfei on 10/9/2015.
  */
-var bodyOnLoad = function () {
-    setDonateDisplayAmt();
-};
 
 var validateJson = function (json) {
     try {
@@ -142,43 +139,3 @@ var onValidateClick = function () {
 var onClearClick = function () {
     setTextAreaValue('');
 };
-
-var onPythonMsgTransClick = function() {
-    var json = getTextAreaValue();
-        setTextAreaValue(
-            json.replace(/'/g, '"')
-        );
-};
-
-var setDonateDisplayAmt = function () {
-    var donateDisplayAmount = '$' + (window.mainConfig.donateAmount / 100);
-    $('#donate-btn').html('Donate ' + donateDisplayAmount);
-};
-
-var handler = StripeCheckout.configure({
-    key: window.mainConfig.stripeKey,
-    image: window.mainConfig.stripeLogo,
-    token: function (token) {
-        $.post(window.mainConfig.stripeUrl, {
-                token: token.id,
-                amount: (window.mainConfig.donateAmount || 200),
-                email: token.email
-            },
-            function (returnedData) {
-                toastr["success"]("Thanks for your support!")
-            }
-        );
-    }
-});
-var onDonateButtonClick = function () {
-    handler.open({
-        name: window.mainConfig.stripeName,
-        description: window.mainConfig.stripeDescription,
-        zipCode: true,
-        amount: window.mainConfig.donateAmount
-    });
-};
-
-$(window).on('popstate', function () {
-    handler.close();
-});
